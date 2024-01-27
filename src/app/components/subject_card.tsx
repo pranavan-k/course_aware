@@ -10,7 +10,7 @@ interface IProps {
 export default function SubjectCard(props: IProps) {
   return (
     <Link href={props.link}>
-      <div className="w-full h-1/12 border-slate-700 border-2 flex gap-5">
+      <div className="h-1/12 w-full border-slate-700 border-2 flex gap-5">
           <Image alt="functions" src="" width={20} height={20}>
               
           </Image>
