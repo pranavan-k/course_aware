@@ -33,12 +33,12 @@ export default function Heading(props: IProps){
   });
 
   return (
-    <div className="flex justify-center w-full lg:py-16 lg:px-52 text-neutral-300">
+    <div className="flex justify-center w-full h-1/4 lg:py-16 px-8 lg:px-52 text-neutral-300 lg:flex-row flex-col lg:mb-0 mb-10">
         <div data-scroll data-scroll-speed="0.2" className="w-3/5">
-            <h2 className={`${robotoItalic.className}`}>Practice problems for</h2>
-            <h1 className={`${robotoRegular.className} text-6xl leading-loose`}>{props.title}</h1>
+            <h2 className={`${robotoItalic.className} collapse lg:visible`}>Practice problems for</h2>
+            <h1 className={`${robotoRegular.className} lg:text-6xl text-4xl leading-loose`}>{props.title}</h1>
         </div>
-        <div className='items-center flex font-medium'>
+        <div className='items-center flex font-medium lg:text-base text-sm'>
             <p>{props.description}</p>
         </div> 
     </div>
